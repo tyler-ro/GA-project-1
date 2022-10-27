@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  table-layout: fixed;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+button {
+  border-radius: 12px;
+  width: 120px;
+  height: 75px;
+  text-align: center;
+}
+
+input {
+  width: 80px;
+  height: 25px;
+}
+
+button:hover {
+  background-color: grey;
+  box-shadow: rgba(0, 0, 0, 0, 0.19);
+}
+
+div.dealerHand {
+  grid-row: 1;
+  grid-column: 7;
+}
+
+div.dealerSum {
+  grid-row: 2;
+  grid-column: 7;
+}
+
+div.yourHand {
+  grid-row: 4;
+  grid-column: 7;
+  padding: 0 0 30px 0;
+}
+
+div.yourSum {
+  grid-row: 7;
+  grid-column: 7;
+}
+
+div.cards img {
+  height: 200px;
+  width: 140px;
+  margin: 1px;
+  background-color: white;
+  grid-column: 2 / 4;
+}
+
+div.cards img {
+  height: 200px;
+  width: 140px;
+  margin: 1px;
+  background-color: white;
+}
+
+#hitButton {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+#playButton {
+  grid-column: 2;
+  grid-row: 4;
+}
+#standButton {
+  grid-column: 4;
+  grid-row: 4;
+}
